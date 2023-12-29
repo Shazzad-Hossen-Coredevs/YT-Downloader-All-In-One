@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 500px;
+            height: 400px;
+            /* width: 100%; */
+        }
+        .spinner {
+            border: 8px solid rgba(0, 0, 0, 0.1);
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+       
+
+    </style>
+ </head>
+ <body>
+
+   
+
+    <div class="container">
+        <div style="background-color: #f0f9ff; border-bottom: 1px solid #4f93ce; padding: 1rem 2rem;  display: flex; gap: 20px; align-items: center; font-size: 18px;">
+               <img src="./images/logo.png" alt="logo" style="width: 30px;" />
+               YT DOWNLOADER
+            <div style="/* Other Nav Options */">
+               <!-- Add other nav options here -->
+            </div>
+           </div>
+
+           <div style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;" id="spinner">
+            <div class="spinner"></div></div>
+
+           
+
+           <div style="padding: 20px; display: none;" id="container">
+
+            <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; ">
+            <img id="img" src="" alt="Thumbnails" style="height: 150px; width: 200px;">
+            <h1 id="title" style="padding-top: 20px; font-weight: 600; font-size: 16px;"></h1>
+            </div>
+
+            <div style="padding-top: 40px;">
+                <table style="width: 100%;  border-collapse: collapse;" >
+                    <thead style="background-color: rgb(125 211 252); color: white;">
+                        <th style="padding: 8px; text-align: left;">SL</th>
+                        <th style="padding: 8px; text-align: left;">Format</th>
+                        <th style="padding: 8px; text-align: left;">Audio</th>
+                        <th style="padding: 8px; text-align: left;">Video</th>
+                        <th style="padding: 8px; text-align: left;">Size</th>
+                        <th style="padding: 8px; text-align: left;">Download</th>
+                    </thead>
+                    <tbody id="result">
+
+                    </tbody>
+                </table>
+
+            
+            </div>
+           </div>
+    </div>
+
+   
+    
+    <script src="popup.js"></script>
+ </body>
+</html>

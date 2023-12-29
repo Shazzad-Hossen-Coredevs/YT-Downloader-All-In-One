@@ -1,0 +1,4 @@
+desktop-app/node_modules
+puppeteer/node_modules
+ytdl-core/node_modules
+chrome-extension/back-end/node_modules

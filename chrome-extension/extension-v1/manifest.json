@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "My Extension",
+    "version": "1.0",
+    "description": "This extension fetches the URL of the current active tab and makes an API call.",
+    "browser_action": {
+       "default_icon": "./images/logo.png",
+       "default_popup": "popup.html"
+    },
+    "permissions": [
+       "activeTab",
+       "tabs"
+    ]
+   }
